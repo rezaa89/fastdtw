@@ -147,7 +147,7 @@ def __dtw(x, y, window, dist):
         path.append((i-1, j-1))
         i, j = D[i, j][1], D[i, j][2]
     path.reverse()
-    return (D[len_x, len_y][0], path)
+    return D[len_x, len_y][0]#(, path)
 
 
 def __reduce_by_half(x):
